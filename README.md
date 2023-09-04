@@ -1,6 +1,6 @@
 # Chat App
 
-![Logo](logo.png)
+
 
 ## Try Chat App
 
