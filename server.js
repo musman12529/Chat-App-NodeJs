@@ -2,7 +2,9 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const server = require('http').createServer(app);
+const cors = require('cors');
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(cors());
 server.listen(process.env.PORT || 5000);
 
 const users = {};
