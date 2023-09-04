@@ -37,24 +37,28 @@
             background-color: white;
             color: black;
 
+            overflow-y: auto;
+
         }
         .send-container {
             text-align: center;
             margin-top: 20px;
-            width: 70%;
+            
             margin: auto;
             
             
         }
         .logo{
-            text-align: center;
-            margin-top: 10px;
-            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
         }
         .message-input {
             padding: 15px;
             border: none;
-            width: 70%; /* Match the width of the container */
+            width: 67%; /* Match the width of the container */
             height: 30px; /* Increased height */
             box-sizing: border-box;
             margin-top: 15px;
@@ -70,6 +74,7 @@
             cursor: pointer;
             height: 30px; /* Increased height */
             margin-top: 15px;
+            
         }
         .box-tag{
             display: flex;
@@ -87,11 +92,26 @@
     right: 0;
 
         }
+        .message-container .box-tag {
+  /* ... existing styles ... */
+  flex-shrink: 0; /* Prevent the box-tag from shrinking */
+}
+
+.message-container .messages {
+  /* Create a flex container for messages with vertical flow */
+  flex-grow: 1; /* Allow the messages to grow and fill available space */
+  overflow-y: auto; /* Enable vertical scroll if content exceeds container height */
+  padding: 10px; /* Add padding for better readability */
+}
+.imag{
+    width: 100px;
+    height: 100px;
+}
     </style>
     
 </head>
 <body>
-    <h1 class="logo">Chat App</h1>
+    <p class="logo"><img class="imag" src="logo.png" alt=""></p>
     <div id="message-div" class="message-container">
     <div class="box-tag">
         <h2>Chat</h2>
