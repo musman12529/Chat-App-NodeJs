@@ -1,4 +1,4 @@
-const socket= io('http://localhost:5000');
+const socket= io('https://nodejs-chat-app-w23f.onrender.com/');
 
 const messageForm= document.getElementById('send-box');
 const messageInput = document.querySelector('.message-input');
