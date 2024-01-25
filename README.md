@@ -1,5 +1,5 @@
 # Chat App
-# It can take time to load website because I am using a free service from render.io
+# It can take time to load website because I am using a free service from render.com
 
 
 ## Try Chat App
